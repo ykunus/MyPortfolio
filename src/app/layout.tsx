@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Sixtyfour, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import React from "react";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const sixtyfour = Sixtyfour({
+  subsets: ["latin"], weight: ["400"]
 });
 
 const geistMono = Geist_Mono({
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${sixtyfour.className} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
