@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Sixtyfour, Geist_Mono } from "next/font/google";
+import { Oswald, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import React from "react";
 
-const sixtyfour = Sixtyfour({
+const oswald = Oswald({
   subsets: ["latin"], weight: ["400"]
 });
 
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sixtyfour.className} ${geistMono.variable} antialiased`}
+        className={`${oswald.className} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>

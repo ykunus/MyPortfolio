@@ -32,16 +32,19 @@ const Navbar = () => {
     }
 
     return (
-        <div >
-            {/* Name/logo */}
-            <nav className="w-full fixed flex px-5 lg:px-8 xl-px=[8%] py-4 items-center justify-between z-50 text-lg gap-7 font-medium m-4">
+        <div className="w-full h-21 bg-[url('/header-bg-color.png')] bg-cover bg-no-repeat fixed top-0 left-0 z-50">
+            <nav className="w-full flex px-5 lg:px-8 xl-px=[8%] py-4 items-center justify-between text-lg gap-7 font-medium m-4">
+                {/* Name/logo */}
                 <header className="w-32 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md">
                     <NavLink to="#top" smooth className="bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">
                         YUNUS
                     </NavLink>
                 </header>
                 {/* middle navbar */}
-                <ul className="hidden lg:flex gap-6 lg:gap-10 justify-center rounded-lg bg-white items-center font- shadow-md w-120 h-12 ml-10 ">
+                <ul className="hidden lg:flex gap-6 lg:gap-10 justify-center rounded-lg bg-white items-center font- shadow-md w-96 h-12 ml-10 ">
+                    <NavLink to="#top" smooth className={getLinkClass("#top")}>
+                        Home
+                    </NavLink>
                     <NavLink to="#About" smooth className={getLinkClass("#About")}>
                         About
                     </NavLink>
@@ -57,10 +60,10 @@ const Navbar = () => {
                     <button>
                         <Image src ="/moon_icon.png" alt ="moon_icon " width={24} height ={24} className= "cursor-pointer"/>
                     </button>
-                    <NavLink to="#Contact" smooth className="w-44 h-10 rounded-lg bg-white items-center justify-center hidden lg:flex font-bold shadow-md
-                        bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">
-                        CONTACT
-                    </NavLink>
+                        <NavLink to="#Contact" smooth className="w-44 h-10 rounded-lg bg-white items-center justify-center hidden lg:flex font-bold shadow-md
+                            bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">
+                            CONTACT
+                        </NavLink>
                     <button onClick={openMenu} className='block lg:hidden mr-3'>
                         <Image src ="/menu-black.png" alt ="menu" width={24} height ={24} className= "cursor-pointer"/>
                     </button>
@@ -76,7 +79,7 @@ const Navbar = () => {
                             <Image src ="/right-arrow-bold.png" alt ="exit " width={24} height ={24} className= "cursor-pointer"/>
                         </button>
                     </div>
-                    <NavLink to="#Home" smooth onClick={closeMenu} className={getLinkClass("#Home")}>
+                    <NavLink to="#top" smooth onClick={closeMenu} className={getLinkClass("#top")}>
                         Home
                     </NavLink>
                     <NavLink to="#About" smooth onClick={closeMenu} className={getLinkClass("#About")}>
