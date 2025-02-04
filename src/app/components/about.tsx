@@ -129,10 +129,10 @@ const About = () => {
     return (
         <div className="pt-54 pl-15 flex flex-col">
             <div className="flex justify-center pl-24">
-                <h1 className="text-4xl font-bold -ml-28">About Me</h1>
+                <h1 className="text-4xl font-bold -ml-28">Hello!</h1>
             </div>
             <div className="flex justify-start pl-24 mt-6 gap-8">
-                <div className="sticky top-24 h-fit">
+                <div className="sticky top-28 h-fit">
                     <Image src="/PortfolioPic.jpeg" alt="me" width={350} height={400} 
                         className="rounded-full object-cover w-[380px] h-[380px] border-2 border-black" 
                     /> 
@@ -220,7 +220,6 @@ const About = () => {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.2 }}
                             className="bg-gradient-to-b from-white to-pink-100 rounded-2xl p-6 shadow-md"
-                            // className="bg-white p-6 rounded-lg border-2 border-white shadow-xl w-full "
 
                         >
                             <h2 className="text-2xl font-bold mb-4">{section.title}</h2>

@@ -5,7 +5,7 @@ import Navbar from "./components/navbar";
 import Header from "./components/header";
 import About from "./components/about";
 import { ScrollAnimationWrapper } from "./components/ScrollAnimation";
-
+import Projects from "./components/projects";
 export default function Home() {
   return (
     <main style={{ minHeight: "200vh" }}>
@@ -17,6 +17,7 @@ export default function Home() {
         <ScrollAnimationWrapper>
           <About/>
         </ScrollAnimationWrapper>
+        <Projects/>
         <Routes>
         </Routes>
       </Router>
