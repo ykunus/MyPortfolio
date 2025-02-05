@@ -3,9 +3,10 @@ import React from "react";
 import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import Navbar from "./components/navbar";
 import Header from "./components/header";
-import About from "./components/about";
+import About from "./pages/about";
 import { ScrollAnimationWrapper } from "./components/ScrollAnimation";
-import Projects from "./components/projects";
+import Projects from "./pages/projects";
+import Contact from "./pages/contact";
 export default function Home() {
   return (
     <main style={{ minHeight: "200vh" }}>
@@ -17,9 +18,12 @@ export default function Home() {
         <ScrollAnimationWrapper>
           <About/>
         </ScrollAnimationWrapper>
-        <Projects/>
-        <Routes>
-        </Routes>
+          <Projects/>
+        <ScrollAnimationWrapper>
+          <Contact/>
+        </ScrollAnimationWrapper>
+
+        
       </Router>
     </main>
   );

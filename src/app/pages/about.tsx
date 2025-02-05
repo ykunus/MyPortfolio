@@ -1,9 +1,9 @@
 import React, { useState, useRef } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import FlyoutContent from './flyoutContent'
-import FlyoutLink from './flyoutlink'
-import Container from './container'
+import FlyoutContent from '../components/flyoutContent'
+import FlyoutLink from '../components/flyoutlink'
+import Container from '../components/container'
 import { NavLink } from 'react-router-dom'
 
 // const imageArray = [
@@ -31,7 +31,7 @@ const About = () => {
     // Scroll function
     const scrollToSection = (ref: React.RefObject<HTMLDivElement>, sectionName: string) => {
         if (ref.current) {
-            const yOffset = -100;
+            const yOffset = -110;
             const element = ref.current;
             const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
             
