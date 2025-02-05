@@ -2,26 +2,26 @@ import React from 'react'
 import { Project_temp} from '../components/project_temp'
 const projectCards = [
     {
-        url: 'https://github.com/ykunus/MyPortfolio',
-        title: 'This Website!',
-        image: '/linkedIn-favicon .png',
-        description: ['This website is a portfolio website for my projects and skills.',  'It is built with Next.js, Tailwind CSS, TypeScript, and React.', 'It is hosted on Vercel'],
-        tools: ['Next.js', 'Tailwind CSS', 'TypeScript', 'React', 'Node.js', 'Express']
-    },
-    {
-        url: 'https://github.com/ykunus/MyPortfolio',
+        url: 'https://github.com/abbasi-danish/YumJunction',
         title: 'YumJunction!',
         image: '/linkedIn-favicon .png',
         description: ['This website is a portfolio website for my projects and skills.',  'It is built with Next.js, Tailwind CSS, TypeScript, and React.', 'It is hosted on Vercel'],
         tools: ['Next.js', 'Tailwind CSS', 'TypeScript', 'React', 'Node.js', 'Express']
     },
     {
-        url: 'https://github.com/ykunus/MyPortfolio',
+        url: 'https://github.com/ykunus/unix-shell',
         title: 'Linux Shell!',
-        image: '/linkedIn-favicon .png',
+        image: 'public/unix-shell.png',
         description: ['This website is a portfolio website for my projects and skills.',  'It is built with Next.js, Tailwind CSS, TypeScript, and React.', 'It is hosted on Vercel'],
         tools: ['Next.js', 'Tailwind CSS', 'TypeScript', 'React', 'Node.js', 'Express']
     }
+    {
+        url: 'https://github.com/ykunus/MyPortfolio',
+        title: 'This Website!',
+        image: '/linkedIn-favicon .png',
+        description: ['This website is a portfolio website for my projects and skills.',  'It is built with Next.js, Tailwind CSS, TypeScript, and React.', 'It is hosted on Vercel'],
+        tools: ['Next.js', 'Tailwind CSS', 'TypeScript', 'React', 'Node.js', 'Express']
+    },
 ]
 const projects = () => {
   return (
