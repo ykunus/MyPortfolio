@@ -57,9 +57,9 @@ const Navbar = () => {
                 </ul>
                 {/* right navbar */}
                 <div className = "flex items-center gap-4">
-                    <button>
+                    {/* <button>
                         <Image src ="/moon_icon.png" alt ="moon_icon " width={24} height ={24} className= "cursor-pointer"/>
-                    </button>
+                    </button> */}
                         <NavLink to="#Contact" smooth className="w-44 h-10 rounded-lg bg-white items-center justify-center hidden lg:flex font-bold shadow-md
                             bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">
                             CONTACT

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
-import Typing from './typing'
+import Typing from '../components/typing'
 import { motion } from 'framer-motion'
 
 const header = () => {
@@ -94,8 +94,8 @@ const header = () => {
                             src="/resume-favicon .png" 
                             onClick={() => {
                                 const link = document.createElement('a');
-                                link.href = '/Yunus_Kocaman_Resume.pdf';
-                                link.download = '/Yunus_Kocaman_Resume.pdf';
+                                link.href = '/Yunus_Kocaman_Resume-2025.pdf';
+                                link.download = '/Yunus_Kocaman_Resume-2025.pdf';
                                 document.body.appendChild(link);
                                 link.click();
                                 document.body.removeChild(link);

@@ -2,7 +2,7 @@
 import React from "react";
 import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import Navbar from "./components/navbar";
-import Header from "./components/header";
+import Header from "./pages/header";
 import About from "./pages/about";
 import { ScrollAnimationWrapper } from "./components/ScrollAnimation";
 import Projects from "./pages/projects";
