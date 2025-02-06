@@ -94,8 +94,8 @@ const header = () => {
                             src="/resume-favicon .png" 
                             onClick={() => {
                                 const link = document.createElement('a');
-                                link.href = '/Yunus_Kocaman_Resume-2025.pdf';
-                                link.download = '/Yunus_Kocaman_Resume-2025.pdf';
+                                link.href = '/Yunus_Kocaman_Resume_2025_Feb_05_latest.pdf';
+                                link.download = '/Yunus_Kocaman_Resume_2025_Feb_05_latest.pdf';
                                 document.body.appendChild(link);
                                 link.click();
                                 document.body.removeChild(link);

@@ -2,21 +2,9 @@ import React, { useState, useRef } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import FlyoutContent from '../components/flyoutContent'
-import FlyoutLink from '../components/flyoutlink'
 import Container from '../components/container'
 import { NavLink } from 'react-router-dom'
 
-// const imageArray = [
-//     { src: "/PortfolioPic.jpeg", alt: "me" },
-//     { src: "/babaWife.png", alt: "my wife and grandpa" },
-//     { src: "/danishOmo.jpeg", alt: "danish and omo" },
-//     { src: "/family-1.jpeg", alt: "family" },
-//     { src: "/monopoly.jpeg", alt: "monopoly" },
-//     { src: "/smiley.jpeg", alt: "sniley"},
-//     { src: "/vaccum.png", alt: "vaccum" },
-//     { src: "/grill.jpeg", alt: "grill" },
-//     { src: "/teaching-2.jpg", alt: "teaching" },
-// ]
 const aboutMe = FlyoutContent({info: "info" })
 const About = () => {
     const [currentImage, setCurrentImage] = useState(0);
@@ -46,7 +34,7 @@ const About = () => {
     const sections = [
         {
             title: "About Me",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            content: "I'm Yunus Kocaman, a computer science student at Brandeis University with a passion for software engineering and machine learning/AI. As cliché as it sounds, I make it a goal to learn something new every day—not just in tech, but also in fields like history, theology, and philosophy. Right now, I'm diving into audio classification and speech recognition, working on training an ML model to recognize Arabic Maqamat—a project that perfectly blends my love for technology and Arabic melodies. Outside of coding, I enjoy playing basketball with friends, trying new foods, and teaching others—whether it's about programming or just life in general. I'm always looking for new challenges and ways to apply technology to the world around me. Feel free to reach out—I'd love to connect!"
         },
         {
             title: "Education",
@@ -54,19 +42,30 @@ const About = () => {
                 <Container 
                     leftContent={
                         <>
-                            <h3 className="text-xl font-semibold mb-2">Bachelor's in Computer Science</h3>
-                            <p className="text-gray-700">University of California, Los Angeles</p>
-                            <p className="text-gray-600">2018 - 2022</p>
+                            <h3 className="text-xl font-semibold mb-2">Bachelor's of Science in Computer Science</h3>
+                            <p className="text-gray-700">Brandeis University</p>
+                            <p className="text-gray-600">2022-2026</p>
                         </>
                     }
                     rightContent={
                         <>
                             <h3 className="text-xl font-semibold mb-2">Relative Coursework</h3>
-                            <p className="text-gray-700">Data Structures</p>
-                            <p className="text-gray-700">Algorithms</p>
-                            <p className="text-gray-700">Computer Organization</p>
-                            <p className="text-gray-700">Operating Systems</p>
-                            <p className="text-gray-700">Computer Networks</p>
+                            <h4 className="text-lg font-semibold mb-2">CS Courses</h4>
+                            <p className="text-gray-700"> Data Structures and Algorithms</p>
+                            <p className="text-gray-700">OOP</p>
+                            <p className="text-gray-700">Python</p>
+                            <p className="text-gray-700"> Operating Systems</p>
+                            <p className="text-gray-700">Embedded Systems</p>
+                            <p className="text-gray-700">Fundementals of Software Engineering</p>
+                            <h4 className="text-lg font-semibold mb-2">ML Courses</h4>
+                            <p className="text-gray-700">Intro to Computer Secuirty</p>
+                            <p className="text-gray-700">Intro to Machine Learning</p>
+                            <p className="text-gray-700">NLP</p>
+                            <h4 className="text-lg font-semibold mb-2">Math Courses</h4>
+                            <p className="text-gray-700">Intro to Probability & Statistics</p>
+                            <p className="text-gray-700">Calculus I</p>
+                            <p className="text-gray-700">Linear Algebra</p>
+                            <p className="text-gray-700">Discrete Structures</p>
                         </>
                     }
                 />
@@ -79,38 +78,57 @@ const About = () => {
                     <Container
                         leftContent={
                             <>
-                                <h3 className="text-xl font-semibold mb-2">Bachelor's in Computer Science</h3>
-                                <p className="text-gray-700">University of California, Los Angeles</p>
-                                <p className="text-gray-600">2018 - 2022</p>
+                                <h3 className="text-xl font-semibold mb-2">Programming Languages</h3>
+                                <p className="text-gray-700">Java</p>
+                                <p className="text-gray-600">Python</p>
+                                <p className="text-gray-600">C</p>
+                                <p className="text-gray-600">JavaScript/TypeScript</p>
+                                <p className="text-gray-600">Swift</p>
+
                             </>
                         }
                         rightContent={
                             <>
-                                <h3 className = "text-xl font-semibold mb-2">Relative Coursework</h3>
-                                <p className="text-gray-700">Data Structures</p>
-                                <p className="text-gray-700">Algorithms</p>
-                                <p className="text-gray-700">Computer Organization</p>
-                                <p className="text-gray-700">Operating Systems</p>
-                                <p className="text-gray-700">Computer Networks</p>
+                                <h3 className = "text-xl font-semibold mb-2">Full Stack Development</h3>
+                                <h4 className="text-lg font-semibold mb-2">Frontend</h4>
+                                <p className="text-gray-700">Next.js</p>
+                                <p className="text-gray-700">React</p>
+                                <p className="text-gray-700">HTML/CSS</p>
+                                <p className="text-gray-700">Tailwind CSS</p>
+                                <h4 className="text-lg font-semibold mb-2">Backend</h4>
+                                <p className="text-gray-700">Node.js</p>
+                                <p className="text-gray-700">Flask</p>
+                                <h4 className="text-lg font-semibold mb-2">Cloud Services & Databases</h4>
+                                <p className="text-gray-700">CosmosDB</p>
+                                <p className="text-gray-700">Azure</p>
                             </>
                         }
                     />
                     <Container
                         leftContent={
                             <>
-                                <h3 className="text-xl font-semibold mb-2">Bachelor's in Computer Science</h3>
-                                <p className="text-gray-700">University of California, Los Angeles</p>
-                                <p className="text-gray-600">2018 - 2022</p>
+                                <h3 className="text-xl font-semibold mb-2">Machine Learning & Data Science</h3>
+                                <h4 className="text-lg font-semibold mb-2">Data Processing & Visualization</h4>
+                                <p className="text-gray-700">Pandas</p>
+                                <p className="text-gray-700">NumPy</p>
+                                <p className="text-gray-700">Matplotlib</p>
+                                <p className="text-gray-700">Seaborn</p>
+                                <h4 className="text-lg font-semibold mb-2">Frameworks & libraries</h4>
+                                <p className="text-gray-700">Scikit-Learn</p>
+                                <p className="text-gray-700"> Imbalanced-lear</p>
                             </>
                         }
                         rightContent={
                             <>
-                                <h3 className = "text-xl font-semibold mb-2">Relative Coursework</h3>
-                                <p className="text-gray-700">Data Structures</p>
-                                <p className="text-gray-700">Algorithms</p>
-                                <p className="text-gray-700">Computer Organization</p>
-                                <p className="text-gray-700">Operating Systems</p>
-                                <p className="text-gray-700">Computer Networks</p>
+                                <h3 className="text-xl font-semibold mb-2">DevOps & Development Tools</h3>
+                                <h4 className="text-lg font-semibold mb-2">Version Control</h4>
+                                <p className="text-gray-700">Git</p>
+                                <p className="text-gray-700">GitHub</p>
+                                <p className="text-gray-700">Matplotlib</p>
+                                <p className="text-gray-700">Seaborn</p>
+                                <h4 className="text-lg font-semibold mb-2">Infrastructure & Deployment</h4>
+                                <p className="text-gray-700">Docker</p>
+                                <p className="text-gray-700">Azure</p>
                             </>
                         }
                     />
@@ -122,7 +140,26 @@ const About = () => {
         },
         {
             title: "Experience",
-            content: "Worked on various projects..."
+            content: (
+                <>
+                    <ul className="">
+                        <li>
+                            <h3 className="text-xl font-semibold mb-2">Boston Education and Counseling/Youth Mentor</h3>
+                        </li>
+                        <li>
+                            <span className="text-black font-bold">Mentored and Supervised 30+ Students: </span>Provide weekly academic, social, and spiritual guidance to middle
+                            and high school students, ensuring comprehensive support
+                        </li>
+                        <li>
+                            <span className="text-black font-bold">Led a group of 7 Mentors: </span>Manage and mentor a team of five, equipping them with effective strategies to
+                            support student development
+                        </li>
+                        <li>
+                            <span className="text-black font-bold">Facilitated 15+ Youth Retreats: </span>Organized and led 7 to 10 day retreats focused on personal growth, leadership,
+                        </li>
+                    </ul>
+                </>
+            )
         }
     ];
 

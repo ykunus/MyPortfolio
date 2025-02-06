@@ -12,18 +12,24 @@ export default function Home() {
     <main style={{ minHeight: "200vh" }}>
       <Router>
         <Navbar/>
-        <ScrollAnimationWrapper>
-          <Header/>
-        </ScrollAnimationWrapper>
-        <ScrollAnimationWrapper>
-          <About/>
-        </ScrollAnimationWrapper>
+        <div id="top">
+          <ScrollAnimationWrapper>
+            <Header/>
+          </ScrollAnimationWrapper>
+        </div>
+        <div id="about" className="scroll-mt-32">
+          <ScrollAnimationWrapper>
+            <About/>
+          </ScrollAnimationWrapper>
+        </div>
+        <div id="projects" className="scroll-mt-32">
           <Projects/>
-        <ScrollAnimationWrapper>
-          <Contact/>
-        </ScrollAnimationWrapper>
-
-        
+        </div>
+        <div id="contact" className="scroll-mt-32">
+          <ScrollAnimationWrapper>
+            <Contact/>
+          </ScrollAnimationWrapper>
+        </div>
       </Router>
     </main>
   );

@@ -19,11 +19,21 @@ const projectCards = [
     },
     {
         url: 'https://github.com/ykunus/MyPortfolio',
+        title: 'Fraud Detection!',
+        image: '/fraud-detection.png',
+        description: ['Explored multiple machine learning models for fraud detection, including Logistic Regression, Decision Trees, and K-Nearest Neighbors (K-NN).',
+            'Engineered and optimized features using imbalanced dataset techniques (SMOTE) to improve fraud classification in skewed datasets.','Implemented a data preprocessing pipeline with Pandas and NumPy, handling missing values, feature scaling, and outlier detection to enhance model performance.',
+            'Visualized dataset distributions and fraud patterns using Matplotlib and Seaborn, refining feature selection and model interpretability.','Analyzed and compared model performance using Scikit-Learn metrics such as confusion matrices, ROC curves, and precision-recall analysis to select the most suitable approach.'
+        ],
+        tools: ['Python', 'Scikit-Learn', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Imbalanced-learn']
+    },
+    {
+        url: 'https://github.com/ykunus/MyPortfolio',
         title: 'This Website!',
         image: '/my-portfolio.png',
         description: ['This website is a portfolio website for my projects and skills.',  'It is built with Next.js, Tailwind CSS, TypeScript, and React.', 'It is hosted on Vercel'],
         tools: ['Next.js', 'Tailwind CSS', 'TypeScript', 'React', 'Node.js', 'Express']
-    },
+    }
 ]
 const projects = () => {
   return (
