@@ -34,7 +34,7 @@ const About = () => {
     const sections = [
         {
             title: "About Me",
-            content: "I'm Yunus Kocaman, a computer science student at Brandeis University with a passion for software engineering and machine learning/AI. As cliché as it sounds, I make it a goal to learn something new every day—not just in tech, but also in fields like history, theology, and philosophy. Right now, I'm diving into audio classification and speech recognition, working on training an ML model to recognize Arabic Maqamat—a project that perfectly blends my love for technology and Arabic melodies. Outside of coding, I enjoy playing basketball with friends, trying new foods, and teaching others—whether it's about programming or just life in general. I'm always looking for new challenges and ways to apply technology to the world around me. Feel free to reach out—I'd love to connect!"
+            content: "I'm Yunus Kocaman, a computer science student at Brandeis University with a passion for software engineering and machine learning/AI. As cliché as it sounds, I make it a goal to learn something new every day—not just in tech, but also in fields like history, theology, and philosophy. Right now, I'm diving into audio classification and speech recognition, working on training an ML model to recognize Arabic Maqamat—a project that perfectly blends my love for technology and Arabic melodies. Outside of coding, I enjoy playing basketball with friends, cooking a ribeye, and teaching others—whether it's about programming, theology or just life in general. I'm always looking for new challenges and ways to apply technology to the world around me. Feel free to reach out—I'd love to connect!"
         },
         {
             title: "Education",
@@ -169,7 +169,7 @@ const About = () => {
                 <h1 className="text-4xl font-bold -ml-28">Hello!</h1>
             </div>
             <div className="flex justify-start pl-24 mt-6 gap-8">
-                <div className="sticky top-28 h-fit">
+                <div className="sticky top-28 h-fit hidden sm:block">
                     <Image src="/PortfolioPic.jpeg" alt="me" width={350} height={400} 
                         className="rounded-full object-cover w-[380px] h-[380px] border-2 border-black" 
                     /> 

@@ -21,7 +21,7 @@ const Typing = ({ onComplete }: { onComplete: () => void }) => {
                 lineHeight: '1.5'
             }}
             cursor={false}
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-bold"
+            className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold"
         />
     );
 }

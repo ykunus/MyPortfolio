@@ -26,21 +26,46 @@ const header = () => {
   return (
     <div className="pt-56 pl-24 flex flex-col items-center">
         <div className="w-full flex justify-between items-center">
-            <div className="flex-1">
+            <div className="flex-1 flex flex-col items-center -m-24 sm:hidden">
+                <div className="flex-1 flex justify-center">
+                    <motion.div 
+                        className="mt-10 flex justify-center items-center mr-24"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: showIcons ? 1 : 0 }}
+                        transition={{ duration: 0.5, delay: 0.5 }}
+                    >
+                        <Image 
+                            src="/PortfolioPic.jpeg"
+                            alt="me" 
+                            width={150} 
+                            height={150} 
+                            className="rounded-full"
+                        />
+                    </motion.div>
+                </div>
+                <div className="flex-1 lg:text-left text-center lg:pl-0 -ml-24 lg:ml-0">
+                    <Typing onComplete={() => {
+                        setShowIcons(true);
+                        setShowQualities(true);
+                    }}/>
+                </div>
+            </div>
+            
+            <div className="hidden sm:flex flex-1 lg:text-left text-center">
                 <Typing onComplete={() => {
                     setShowIcons(true);
                     setShowQualities(true);
                 }}/>
             </div>
             
-            <div className="flex pr-24">
+            <div className=" pr-24 hidden lg:flex">
                 <motion.div 
                     variants={container}
                     initial="hidden"
                     animate={showQualities ? "show" : "hidden"}
                     className="flex flex-col gap-6 text-2xl"
                 >
-                    <motion.ul className="space-y-4">
+                    <motion.ul className="space-y-4 ">
                         <motion.li variants={itemQualities} >
                             Software Engineer
                         </motion.li>
