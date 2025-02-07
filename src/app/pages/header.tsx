@@ -1,3 +1,5 @@
+// "react-router-dom": "^7.1.1",
+// "react-router-hash-link": "^2.4.3",
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Typing from '../components/typing'
@@ -113,7 +115,7 @@ const header = () => {
                         />
                     </button>
                 </li>
-                <li>
+                {/* <li>
                     <button className="rounded-full hover:opacity-80 transition-opacity flex items-center justify-center">
                         <Image 
                             src="/resume-favicon .png" 
@@ -131,7 +133,7 @@ const header = () => {
                             className="lg:rounded"
                         />
                     </button>
-                </li>
+                </li> */}
             </ul>
         </motion.div>
     </div>

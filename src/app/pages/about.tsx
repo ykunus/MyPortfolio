@@ -1,11 +1,10 @@
+"use client";
 import React, { useState, useRef } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import FlyoutContent from '../components/flyoutContent'
 import Container from '../components/container'
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 
-const aboutMe = FlyoutContent({info: "info" })
 const About = () => {
     const [currentImage, setCurrentImage] = useState(0);
     const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -17,17 +16,9 @@ const About = () => {
     const experienceRef = useRef<HTMLDivElement>(null);
 
     // Scroll function
-    const scrollToSection = (ref: React.RefObject<HTMLDivElement>, sectionName: string) => {
+    const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
         if (ref.current) {
-            const yOffset = -110;
-            const element = ref.current;
-            const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-            
-            window.scrollTo({
-                top: y,
-                behavior: 'smooth'
-            });
-            setActiveSection(sectionName);
+            ref.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
@@ -175,64 +166,28 @@ const About = () => {
                     /> 
                     <ul className="flex flex-col gap-4 mt-6">
                         <li>
-                            <NavLink 
-                                to="#aboutMe"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    if(aboutMeRef.current){
-                                        scrollToSection({current: aboutMeRef.current}, "aboutMe");
-                                    }
-                                }}
-                                className={
-                                    `text-lg transition-colors text-black  hover:text-blue-500`
-                                }
+                            <button 
+                                onClick={() => scrollToSection(aboutMeRef)}
+                                className="text-lg transition-colors text-black hover:text-blue-500"
                             >
                                 About Me
-                            </NavLink>
+                            </button>
                         </li>
                         <li>
-                            <NavLink 
-                                to="#education"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    if (educationRef.current) {
-                                        scrollToSection({ current: educationRef.current }, "education");
-                                    }
-                                }}
-                                className={
-                                    `text-lg transition-colors text-black  hover:text-blue-500`
-                                }
-                            >
-                                Education
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink 
-                                to="#skills"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    if(skillsRef.current){
-                                        scrollToSection({current: skillsRef.current}, "skills");
-                                    }
-                                }}
+                            <button 
+                                onClick={() => scrollToSection(skillsRef)}
                                 className="text-lg transition-colors text-black hover:text-blue-500"
                             >
                                 Skills
-                            </NavLink>
+                            </button>
                         </li>
                         <li>
-                            <NavLink 
-                                to="#experience"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    if(experienceRef.current){
-                                        scrollToSection({current: experienceRef.current}, "experience");
-                                    }
-                                }}
+                            <button 
+                                onClick={() => scrollToSection(experienceRef)}
                                 className="text-lg transition-colors text-black hover:text-blue-500"
                             >
                                 Experience
-                            </NavLink>
+                            </button>
                         </li>
                     </ul>
                 </div>
