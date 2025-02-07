@@ -115,25 +115,25 @@ const header = () => {
                         />
                     </button>
                 </li>
-                {/* <li>
+                <li>
                     <button className="rounded-full hover:opacity-80 transition-opacity flex items-center justify-center">
-                        <Image 
-                            src="/resume-favicon .png" 
-                            onClick={() => {
-                                const link = document.createElement('a');
-                                link.href = '/Yunus_Kocaman_Resume_2025_Feb_05_latest.pdf';
-                                link.download = '/Yunus_Kocaman_Resume_2025_Feb_05_latest.pdf';
-                                document.body.appendChild(link);
-                                link.click();
-                                document.body.removeChild(link);
-                            }}
-                            alt="Download Resume" 
-                            width={50} 
-                            height={50} 
-                            className="lg:rounded"
-                        />
+                        <a
+                        className="rounded-full hover:opacity-80 transition-opacity flex items-center justify-center"
+                        href="/Yunus_Kocaman_Resume_2025_Feb_05_latest.pdf"
+                        download="Yunus_Kocaman_Resume_2025_Feb_05_latest.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                            <Image 
+                                src="/resume-favicon .png"  // Make sure there’s no extra space in the filename!
+                                alt="Download Resume" 
+                                width={50} 
+                                height={50} 
+                                className="lg:rounded"
+                            />
+                        </a>
                     </button>
-                </li> */}
+                </li>
             </ul>
         </motion.div>
     </div>

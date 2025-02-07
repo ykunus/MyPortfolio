@@ -128,7 +128,7 @@ const Navbar = () => {
             </button>
     
             <ul className="hidden lg:flex gap-6 lg:gap-10 justify-center rounded-lg bg-white items-center shadow-md w-96 h-12 ml-10">
-              {['top', 'about', 'projects'].map((section) => (
+              {['Home', 'About Me', 'Projects'].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
