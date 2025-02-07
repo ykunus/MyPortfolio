@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Header from "./pages/header";
 import About from "./pages/about";

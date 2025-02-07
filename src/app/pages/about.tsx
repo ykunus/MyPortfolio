@@ -215,9 +215,7 @@ const About = () => {
                                         scrollToSection({current: skillsRef.current}, "skills");
                                     }
                                 }}
-                                className={({ isActive }) => 
-                                    `text-lg transition-colors text-black hover:text-blue-500`
-                                }
+                                className="text-lg transition-colors text-black hover:text-blue-500"
                             >
                                 Skills
                             </NavLink>
@@ -231,9 +229,7 @@ const About = () => {
                                         scrollToSection({current: experienceRef.current}, "experience");
                                     }
                                 }}
-                                className={({ isActive }) => 
-                                    `text-lg transition-colors text-black hover:text-blue-500`
-                                }
+                                className="text-lg transition-colors text-black hover:text-blue-500"
                             >
                                 Experience
                             </NavLink>
