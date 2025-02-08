@@ -30,36 +30,40 @@ const About = () => {
         {
             title: "Education",
             content: (
-                <Container 
-                    leftContent={
-                        <>
-                            <h3 className="text-xl font-semibold mb-2">Bachelor's of Science in Computer Science</h3>
-                            <p className="text-gray-700">Brandeis University</p>
-                            <p className="text-gray-600">2022-2026</p>
-                        </>
-                    }
-                    rightContent={
-                        <>
-                            <h3 className="text-xl font-semibold mb-2">Relative Coursework</h3>
-                            <h4 className="text-lg font-semibold mb-2">CS Courses</h4>
-                            <p className="text-gray-700"> Data Structures and Algorithms</p>
-                            <p className="text-gray-700">OOP</p>
-                            <p className="text-gray-700">Python</p>
-                            <p className="text-gray-700"> Operating Systems</p>
-                            <p className="text-gray-700">Embedded Systems</p>
-                            <p className="text-gray-700">Fundementals of Software Engineering</p>
-                            <h4 className="text-lg font-semibold mb-2">ML Courses</h4>
-                            <p className="text-gray-700">Intro to Computer Secuirty</p>
-                            <p className="text-gray-700">Intro to Machine Learning</p>
-                            <p className="text-gray-700">NLP</p>
-                            <h4 className="text-lg font-semibold mb-2">Math Courses</h4>
-                            <p className="text-gray-700">Intro to Probability & Statistics</p>
-                            <p className="text-gray-700">Calculus I</p>
-                            <p className="text-gray-700">Linear Algebra</p>
-                            <p className="text-gray-700">Discrete Structures</p>
-                        </>
-                    }
-                />
+                <div className = "flex flex-row gap-4">
+                    <Container 
+                        content={
+                            <div>
+                                <h3 className="text-xl font-semibold mb-2">Bachelor's of Science in Computer Science</h3>
+                                <p className="text-gray-700">Brandeis University</p>
+                                <p className="text-gray-600">2022-2026</p>
+                            </div>
+                        }
+                    />
+                    <Container 
+                        content={
+                            <div>
+                                <h3 className="text-xl font-semibold mb-2">Relative Coursework</h3>
+                                <h4 className="text-lg font-semibold mb-2">CS Courses</h4>
+                                <p className="text-gray-700"> Data Structures and Algorithms</p>
+                                <p className="text-gray-700">OOP</p>
+                                <p className="text-gray-700">Python</p>
+                                <p className="text-gray-700"> Operating Systems</p>
+                                <p className="text-gray-700">Embedded Systems</p>
+                                <p className="text-gray-700">Fundementals of Software Engineering</p>
+                                <h4 className="text-lg font-semibold mb-2">ML Courses</h4>
+                                <p className="text-gray-700">Intro to Computer Secuirty</p>
+                                <p className="text-gray-700">Intro to Machine Learning</p>
+                                <p className="text-gray-700">NLP</p>
+                                <h4 className="text-lg font-semibold mb-2">Math Courses</h4>
+                                <p className="text-gray-700">Intro to Probability & Statistics</p>
+                                <p className="text-gray-700">Calculus I</p>
+                                <p className="text-gray-700">Linear Algebra</p>
+                                <p className="text-gray-700">Discrete Structures</p>
+                            </div>
+                        }
+                    />
+                </div>
             )
         },
         {
@@ -67,64 +71,80 @@ const About = () => {
             content: (
                 <div className="flex flex-col w-full gap-4">
                     <Container
-                        leftContent={
-                            <>
-                                <h3 className="text-xl font-semibold mb-2">Programming Languages</h3>
-                                <p className="text-gray-700">Java</p>
-                                <p className="text-gray-600">Python</p>
-                                <p className="text-gray-600">C</p>
-                                <p className="text-gray-600">JavaScript/TypeScript</p>
-                                <p className="text-gray-600">Swift</p>
+                        content={
+                            <div className="flex flex-row gap-4">
+                                <Container
+                                    content={
+                                        <div>
+                                            <h3 className="text-xl font-semibold mb-2">Programming Languages</h3>
+                                            <p className="text-gray-700">Java</p>
+                                            <p className="text-gray-600">Python</p>
+                                            <p className="text-gray-600">C</p>
+                                            <p className="text-gray-600">JavaScript/TypeScript</p>
+                                            <p className="text-gray-600">Swift</p>
 
-                            </>
+                                        </div>
+                                    }
+                                />
+                                <Container
+                                    content={
+                                        <div>
+                                            <h3 className = "text-xl font-semibold mb-2">Full Stack Development</h3>
+                                            <h4 className="text-lg font-semibold mb-2">Frontend</h4>
+                                            <p className="text-gray-700">Next.js</p>
+                                            <p className="text-gray-700">React</p>
+                                            <p className="text-gray-700">HTML/CSS</p>
+                                            <p className="text-gray-700">Tailwind CSS</p>
+                                            <h4 className="text-lg font-semibold mb-2">Backend</h4>
+                                            <p className="text-gray-700">Node.js</p>
+                                            <p className="text-gray-700">Flask</p>
+                                            <h4 className="text-lg font-semibold mb-2">Cloud Services & Databases</h4>
+                                            <p className="text-gray-700">CosmosDB</p>
+                                            <p className="text-gray-700">Azure</p>
+
+                                        </div>
+                                    }
+                                />
+                            </div>
                         }
-                        rightContent={
-                            <>
-                                <h3 className = "text-xl font-semibold mb-2">Full Stack Development</h3>
-                                <h4 className="text-lg font-semibold mb-2">Frontend</h4>
-                                <p className="text-gray-700">Next.js</p>
-                                <p className="text-gray-700">React</p>
-                                <p className="text-gray-700">HTML/CSS</p>
-                                <p className="text-gray-700">Tailwind CSS</p>
-                                <h4 className="text-lg font-semibold mb-2">Backend</h4>
-                                <p className="text-gray-700">Node.js</p>
-                                <p className="text-gray-700">Flask</p>
-                                <h4 className="text-lg font-semibold mb-2">Cloud Services & Databases</h4>
-                                <p className="text-gray-700">CosmosDB</p>
-                                <p className="text-gray-700">Azure</p>
-                            </>
-                        }
+                    
                     />
                     <Container
-                        leftContent={
-                            <>
-                                <h3 className="text-xl font-semibold mb-2">Machine Learning & Data Science</h3>
-                                <h4 className="text-lg font-semibold mb-2">Data Processing & Visualization</h4>
-                                <p className="text-gray-700">Pandas</p>
-                                <p className="text-gray-700">NumPy</p>
-                                <p className="text-gray-700">Matplotlib</p>
-                                <p className="text-gray-700">Seaborn</p>
-                                <h4 className="text-lg font-semibold mb-2">Frameworks & libraries</h4>
-                                <p className="text-gray-700">Scikit-Learn</p>
-                                <p className="text-gray-700"> Imbalanced-lear</p>
-                            </>
-                        }
-                        rightContent={
-                            <>
-                                <h3 className="text-xl font-semibold mb-2">DevOps & Development Tools</h3>
-                                <h4 className="text-lg font-semibold mb-2">Version Control</h4>
-                                <p className="text-gray-700">Git</p>
-                                <p className="text-gray-700">GitHub</p>
-                                <p className="text-gray-700">Matplotlib</p>
-                                <p className="text-gray-700">Seaborn</p>
-                                <h4 className="text-lg font-semibold mb-2">Infrastructure & Deployment</h4>
-                                <p className="text-gray-700">Docker</p>
-                                <p className="text-gray-700">Azure</p>
-                            </>
-                        }
-                    />
+                        content={
+                            <div className="flex flex-row gap-4">
+                                <Container
+                                    content={
+                                        <div>
+                                            <h3 className="text-xl font-semibold mb-2">Machine Learning & Data Science</h3>
+                                            <h4 className="text-lg font-semibold mb-2">Data Processing & Visualization</h4>
+                                            <p className="text-gray-700">Pandas</p>
+                                            <p className="text-gray-700">NumPy</p>
+                                            <p className="text-gray-700">Matplotlib</p>
+                                            <p className="text-gray-700">Seaborn</p>
+                                            <h4 className="text-lg font-semibold mb-2">Frameworks & libraries</h4>
+                                            <p className="text-gray-700">Scikit-Learn</p>
+                                            <p className="text-gray-700"> Imbalanced-lear</p>
 
-                  
+                                        </div>
+                                    }
+                                />
+                                <Container
+                                    content={
+                                        <div>
+                                            <h3 className="text-xl font-semibold mb-2">DevOps & Development Tools</h3>
+                                            <h4 className="text-lg font-semibold mb-2">Version Control</h4>
+                                            <p className="text-gray-700">Git</p>
+                                            <p className="text-gray-700">GitHub</p>                             
+                                            <h4 className="text-lg font-semibold mb-2">Infrastructure & Deployment</h4>
+                                            <p className="text-gray-700">Docker</p>
+                                            <p className="text-gray-700">Azure</p>
+
+                                        </div>
+                                    }
+                                />
+                            </div>
+                        }
+                    />              
                 </div>
                 
             )
@@ -155,16 +175,20 @@ const About = () => {
     ];
 
     return (
-        <div className="pt-54 pl-15 flex flex-col">
-            <div className="flex justify-center pl-24">
-                <h1 className="text-4xl font-bold -ml-28">Hello!</h1>
+        <div className="mt-24 md:mt-32 px-4 md:px-24 flex flex-col">
+            <div className="flex justify-center">
+                <h1 className="text-4xl font-bold">Hello!</h1>
             </div>
-            <div className="flex justify-start pl-24 mt-6 gap-8">
-                <div className="sticky top-28 h-fit hidden sm:block">
-                    <Image src="/PortfolioPic.jpeg" alt="me" width={350} height={400} 
-                        className="rounded-full object-cover w-[380px] h-[380px] border-2 border-black" 
+            <div className="flex flex-col md:flex-row justify-start mt-6 gap-8">
+                <div className="md:sticky md:top-28 h-fit flex justify-center md:block">
+                    <Image 
+                        src="/PortfolioPic.jpeg" 
+                        alt="me" 
+                        width={350} 
+                        height={400} 
+                        className="rounded-full object-cover w-[280px] h-[280px] md:w-[380px] md:h-[380px] border-2 border-black" 
                     /> 
-                    <ul className="flex flex-col gap-4 mt-6">
+                    {/* <ul className="flex flex-col gap-4 mt-6">
                         <li>
                             <button 
                                 onClick={() => scrollToSection(aboutMeRef)}
@@ -189,10 +213,10 @@ const About = () => {
                                 Experience
                             </button>
                         </li>
-                    </ul>
+                    </ul> */}
                 </div>
 
-                <div className="flex flex-col gap-16 pb-20 flex-1 mr-24">
+                <div className="flex flex-col gap-16 pb-20 flex-1 mr-24 grid-cols-2">
                     {sections.map((section, index) => (
                         <motion.div
                             key={section.title}
@@ -217,6 +241,7 @@ const About = () => {
                         </motion.div>
                     ))}
                 </div>
+
             </div>
         </div>
     );

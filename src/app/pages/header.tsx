@@ -29,7 +29,7 @@ const header = () => {
     <div className="pt-56 pl-24 flex flex-col items-center">
         <div className="w-full flex justify-between items-center">
             <div className="flex-1 flex flex-col items-center -m-24 sm:hidden">
-                <div className="flex-1 flex justify-center">
+                {/* <div className="flex-1 flex justify-center">
                     <motion.div 
                         className="mt-10 flex justify-center items-center mr-24"
                         initial={{ opacity: 0 }}
@@ -44,7 +44,7 @@ const header = () => {
                             className="rounded-full"
                         />
                     </motion.div>
-                </div>
+                </div> */}
                 <div className="flex-1 lg:text-left text-center lg:pl-0 -ml-24 lg:ml-0">
                     <Typing onComplete={() => {
                         setShowIcons(true);

@@ -14,6 +14,8 @@ const Navbar = () => {
             sideMenuRef.current.style.transform = 'translateX(0)';
             if (typeof document !== 'undefined') {
                 document.body.style.overflow = 'hidden';
+                document.body.style.position = 'fixed';
+                document.body.style.width = '100%';
             }
             setIsMenuOpen(true);
         }
@@ -23,7 +25,9 @@ const Navbar = () => {
         if (sideMenuRef.current) {
             sideMenuRef.current.style.transform = 'translateX(100%)';
             if (typeof document !== 'undefined') {
-                document.body.style.overflow = 'auto';
+                document.body.style.overflow = '';
+                document.body.style.position = '';
+                document.body.style.width = '';
             }
             setIsMenuOpen(false);
         }
@@ -66,13 +70,13 @@ const Navbar = () => {
               >
                 CONTACT
               </a>
-              <button onClick={openMenu} className='block lg:hidden mr-3'>
+              <button onClick={openMenu} className='block lg:hidden mr-28'>
                 <Image src="/menu-black.png" alt="menu" width={24} height={24} className="cursor-pointer"/>
               </button>
             </div>
           </nav>
 
-          <ul ref={sideMenuRef} className="flex lg:hidden gap-4 flex-col py-20 px-10 fixed right-0 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition-transform duration-500 transform translate-x-full">
+          <ul ref={sideMenuRef} className="flex lg:hidden gap-4 flex-col py-20 px-10 fixed right-0 top-0 bottom-0 w-64 z-50 h-screen  bg-gradient-to-b from-pink-100 to-white transition-transform duration-500 transform translate-x-full">
             <div className="absolute left-6 top-6">
               <button onClick={closeMenu}>
                 <Image src="/right-arrow-bold.png" alt="exit" width={24} height={24} className="cursor-pointer"/>
@@ -83,7 +87,7 @@ const Navbar = () => {
                 key={section}
                 href={`#${section}`}
                 onClick={closeMenu}
-                className="text-black hover:text-blue-500"
+                className="text-black hover:text-blue-500 justify-left"
               >
                 {section === 'top' ? 'Home' : section.charAt(0).toUpperCase() + section.slice(1)}
               </a>
