@@ -82,7 +82,7 @@ const Navbar = () => {
                 <Image src="/right-arrow-bold.png" alt="exit" width={24} height={24} className="cursor-pointer"/>
               </button>
             </div>
-            {['top', 'about', 'experience', 'projects', 'contact'].map((section) => (
+            {['top', 'about', 'projects', 'contact'].map((section) => (
               <a
                 key={section}
                 href={`#${section}`}
