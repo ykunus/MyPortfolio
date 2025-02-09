@@ -2,8 +2,7 @@
 import React, { useState, useRef } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import Container from '../components/container'
-// import { NavLink } from 'react-router-dom'
+import Container from '../components/Container'
 
 const About = () => {
     const [currentImage, setCurrentImage] = useState(0);
@@ -30,38 +29,18 @@ const About = () => {
         {
             title: "Education",
             content: (
-                <div className = "flex flex-row gap-4">
+                <div className="flex flex-col gap-4">
                     <Container 
-                        content={
-                            <div>
-                                <h3 className="text-xl font-semibold mb-2">Bachelor's of Science in Computer Science</h3>
-                                <p className="text-gray-700">Brandeis University</p>
-                                <p className="text-gray-600">2022-2026</p>
-                            </div>
-                        }
+                        title="Bachelor's of Science in Computer Science" 
+                        content={[["Brandeis University", "2022-2026"]]} 
                     />
                     <Container 
-                        content={
-                            <div>
-                                <h3 className="text-xl font-semibold mb-2">Relative Coursework</h3>
-                                <h4 className="text-lg font-semibold mb-2">CS Courses</h4>
-                                <p className="text-gray-700"> Data Structures and Algorithms</p>
-                                <p className="text-gray-700">OOP</p>
-                                <p className="text-gray-700">Python</p>
-                                <p className="text-gray-700"> Operating Systems</p>
-                                <p className="text-gray-700">Embedded Systems</p>
-                                <p className="text-gray-700">Fundementals of Software Engineering</p>
-                                <h4 className="text-lg font-semibold mb-2">ML Courses</h4>
-                                <p className="text-gray-700">Intro to Computer Secuirty</p>
-                                <p className="text-gray-700">Intro to Machine Learning</p>
-                                <p className="text-gray-700">NLP</p>
-                                <h4 className="text-lg font-semibold mb-2">Math Courses</h4>
-                                <p className="text-gray-700">Intro to Probability & Statistics</p>
-                                <p className="text-gray-700">Calculus I</p>
-                                <p className="text-gray-700">Linear Algebra</p>
-                                <p className="text-gray-700">Discrete Structures</p>
-                            </div>
-                        }
+                        title="Relative Coursework" 
+                        content={[
+                            ["CS Courses", "Data Structures and Algorithms", "OOP", "Python", "Operating Systems", "Embedded Systems", "Fundamentals of Software Engineering"], 
+                            ["ML Courses", "Intro to Computer Security", "Intro to Machine Learning", "NLP"], 
+                            ["Math Courses", "Intro to Probability & Statistics", "Calculus I", "Linear Algebra", "Discrete Structures"]
+                        ]} 
                     />
                 </div>
             )
@@ -69,84 +48,28 @@ const About = () => {
         {
             title: "Skills",
             content: (
-                <div className="flex flex-col w-full gap-4">
-                    <Container
-                        content={
-                            <div className="flex flex-row gap-4">
-                                <Container
-                                    content={
-                                        <div>
-                                            <h3 className="text-xl font-semibold mb-2">Programming Languages</h3>
-                                            <p className="text-gray-700">Java</p>
-                                            <p className="text-gray-600">Python</p>
-                                            <p className="text-gray-600">C</p>
-                                            <p className="text-gray-600">JavaScript/TypeScript</p>
-                                            <p className="text-gray-600">Swift</p>
-
-                                        </div>
-                                    }
-                                />
-                                <Container
-                                    content={
-                                        <div>
-                                            <h3 className = "text-xl font-semibold mb-2">Full Stack Development</h3>
-                                            <h4 className="text-lg font-semibold mb-2">Frontend</h4>
-                                            <p className="text-gray-700">Next.js</p>
-                                            <p className="text-gray-700">React</p>
-                                            <p className="text-gray-700">HTML/CSS</p>
-                                            <p className="text-gray-700">Tailwind CSS</p>
-                                            <h4 className="text-lg font-semibold mb-2">Backend</h4>
-                                            <p className="text-gray-700">Node.js</p>
-                                            <p className="text-gray-700">Flask</p>
-                                            <h4 className="text-lg font-semibold mb-2">Cloud Services & Databases</h4>
-                                            <p className="text-gray-700">CosmosDB</p>
-                                            <p className="text-gray-700">Azure</p>
-
-                                        </div>
-                                    }
-                                />
-                            </div>
-                        }
-                    
+                <div className="flex flex-col gap-4">
+                    <Container 
+                        title="Programming Languages" 
+                        content={[[null, "Java", "Python", "C", "JavaScript/TypeScript", "Swift"]]} 
                     />
-                    <Container
-                        content={
-                            <div className="flex flex-row gap-4">
-                                <Container
-                                    content={
-                                        <div>
-                                            <h3 className="text-xl font-semibold mb-2">Machine Learning & Data Science</h3>
-                                            <h4 className="text-lg font-semibold mb-2">Data Processing & Visualization</h4>
-                                            <p className="text-gray-700">Pandas</p>
-                                            <p className="text-gray-700">NumPy</p>
-                                            <p className="text-gray-700">Matplotlib</p>
-                                            <p className="text-gray-700">Seaborn</p>
-                                            <h4 className="text-lg font-semibold mb-2">Frameworks & libraries</h4>
-                                            <p className="text-gray-700">Scikit-Learn</p>
-                                            <p className="text-gray-700"> Imbalanced-lear</p>
-
-                                        </div>
-                                    }
-                                />
-                                <Container
-                                    content={
-                                        <div>
-                                            <h3 className="text-xl font-semibold mb-2">DevOps & Development Tools</h3>
-                                            <h4 className="text-lg font-semibold mb-2">Version Control</h4>
-                                            <p className="text-gray-700">Git</p>
-                                            <p className="text-gray-700">GitHub</p>                             
-                                            <h4 className="text-lg font-semibold mb-2">Infrastructure & Deployment</h4>
-                                            <p className="text-gray-700">Docker</p>
-                                            <p className="text-gray-700">Azure</p>
-
-                                        </div>
-                                    }
-                                />
-                            </div>
-                        }
-                    />              
+                    <Container 
+                        title="Full Stack Development" 
+                        content={[["Frontend", "Next.js", "React", "HTML/CSS", "Tailwind CSS"], 
+                        ["Backend", "Node.js", "Flask"], 
+                        ["Cloud Services & Databases", "CosmosDB", "Azure"]]} 
+                    />
+                    <Container 
+                        title="Machine Learning & Data Science" 
+                        content={[["Data Processing & Visualization", "Pandas", "NumPy", "Matplotlib", "Seaborn"], 
+                        ["Frameworks & libraries", "Scikit-Learn", "Imbalanced-learn"]]} 
+                    />
+                    <Container 
+                        title="DevOps & Development Tools" 
+                        content={[["Version Control", "Git", "GitHub"], 
+                        ["Infrastructure & Deployment", "Docker", "Azure"]]} 
+                    />
                 </div>
-                
             )
         },
         {
@@ -188,35 +111,32 @@ const About = () => {
                         height={400} 
                         className="rounded-full object-cover w-[280px] h-[280px] md:w-[380px] md:h-[380px] border-2 border-black" 
                     /> 
-                    {/* <ul className="flex flex-col gap-4 mt-6">
-                        <li>
-                            <button 
-                                onClick={() => scrollToSection(aboutMeRef)}
-                                className="text-lg transition-colors text-black hover:text-blue-500"
-                            >
-                                About Me
-                            </button>
-                        </li>
-                        <li>
-                            <button 
-                                onClick={() => scrollToSection(skillsRef)}
-                                className="text-lg transition-colors text-black hover:text-blue-500"
-                            >
-                                Skills
-                            </button>
-                        </li>
-                        <li>
-                            <button 
-                                onClick={() => scrollToSection(experienceRef)}
-                                className="text-lg transition-colors text-black hover:text-blue-500"
-                            >
-                                Experience
-                            </button>
-                        </li>
-                    </ul> */}
+                    
                 </div>
 
-                <div className="flex flex-col gap-16 pb-20 flex-1 mr-24 grid-cols-2">
+                {/* Mobile view */}
+                <div className="sm:hidden">
+                    <div className="flex flex-col gap-8 justify-center items-center">                 
+                        {sections.map((section, index) => (
+                            <motion.div 
+                                key={section.title}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: index * 0.2 }}
+                                className="bg-gradient-to-b from-white to-pink-100 rounded-2xl p-6 shadow-md w-full"
+                            >
+                                <h2 className="text-2xl font-bold mb-4">{section.title}</h2>
+                                <div className="text-lg">
+                                    {section.content}
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Desktop view */}
+                <div className="hidden sm:flex flex-col gap-16 pb-20 flex-1 mr-24 grid-cols-2">
                     {sections.map((section, index) => (
                         <motion.div
                             key={section.title}

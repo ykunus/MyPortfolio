@@ -10,7 +10,7 @@ import Contact from "./pages/contact";
 
 export default function Home() {
   return (
-    <main style={{ minHeight: "200vh" }}>
+    <main className="min-h-[50vh] md:min-h-[200vh]">
       <Navbar/>
       <div id="top">
         <ScrollAnimationWrapper>

@@ -1,5 +1,7 @@
 import React from 'react'
 import { Project_temp} from '../components/project_temp'
+import MobileProjectCard from '../components/mobileProjectCard'
+
 const projectCards = [
     {
         url: 'https://github.com/abbasi-danish/YumJunction',
@@ -35,14 +37,21 @@ const projectCards = [
         tools: ['Next.js', 'Tailwind CSS', 'TypeScript', 'React', 'Node.js', 'Express']
     }
 ]
+
 const projects = () => {
   return (
     <div>
-        <div className="w-full h-48 bg-gradient-to-b from-white to-pink-100 p-6 shadow-md flex items-center justify-center">
+        <div className="w-full h-48 bg-gradient-to-b from-white to-pink-100 p-6 shadow-md hidden md:flex items-center justify-center">
             <h1 className="text-4xl text-gray-400">v Scroll Down v</h1>
         </div>
-        <Project_temp projectCards={projectCards} />
-        <div className="w-full h-48 bg-gradient-to-b from-white to-pink-100 p-6 shadow-md flex items-center justify-center">
+        <h1 className="text-4xl text-black md:hidden justify-center items-center flex">Projects</h1>
+        <div className="hidden md:block">
+            <Project_temp projectCards={projectCards} />
+        </div>
+        <div className="md:hidden mt-8">
+            <MobileProjectCard projectCards={projectCards} />
+        </div>
+        <div className="w-full h-48 bg-gradient-to-b from-white to-pink-100 p-6 shadow-md hidden md:flex items-center justify-center">
             <h1 className="text-4xl text-gray-400">^ Scroll Up ^</h1>
         </div>
     </div>

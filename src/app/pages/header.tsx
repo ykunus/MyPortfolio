@@ -26,34 +26,10 @@ const header = () => {
   };
 
   return (
-    <div className="pt-56 pl-24 flex flex-col items-center">
-        <div className="w-full flex justify-between items-center">
-            <div className="flex-1 flex flex-col items-center -m-24 sm:hidden">
-                {/* <div className="flex-1 flex justify-center">
-                    <motion.div 
-                        className="mt-10 flex justify-center items-center mr-24"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: showIcons ? 1 : 0 }}
-                        transition={{ duration: 0.5, delay: 0.5 }}
-                    >
-                        <Image 
-                            src="/PortfolioPic.jpeg"
-                            alt="me" 
-                            width={150} 
-                            height={150} 
-                            className="rounded-full"
-                        />
-                    </motion.div>
-                </div> */}
-                <div className="flex-1 lg:text-left text-center lg:pl-0 -ml-24 lg:ml-0">
-                    <Typing onComplete={() => {
-                        setShowIcons(true);
-                        setShowQualities(true);
-                    }}/>
-                </div>
-            </div>
+    <div className="pt-56 px-4 md:pl-24 flex flex-col items-center w-full overflow-x-hidden">
+        <div className="w-full flex flex-col md:flex-row md:justify-between items-center">
             
-            <div className="hidden sm:flex flex-1 lg:text-left text-center">
+            <div className=" flex-1 lg:text-left text-center">
                 <Typing onComplete={() => {
                     setShowIcons(true);
                     setShowQualities(true);
@@ -85,12 +61,12 @@ const header = () => {
             </div>
         </div>
         <motion.div 
-            className="mt-40 flex justify-center items-center"
+            className="mt-20 md:mt-40 flex justify-center items-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: showIcons ? 1 : 0 }}
             transition={{ duration: 0.5 }}
         >
-            <ul className="flex gap-6 items-center justify-center -ml-28">
+            <ul className="flex gap-6 items-center justify-center md:-ml-28">
                 <li>
                     <button className="rounded-full hover:opacity-80 transition-opacity flex items-center justify-center">
                         <Image 
@@ -125,7 +101,7 @@ const header = () => {
                         rel="noopener noreferrer"
                         >
                             <Image 
-                                src="/resume-favicon .png"  // Make sure there’s no extra space in the filename!
+                                src="/resume-favicon .png"  
                                 alt="Download Resume" 
                                 width={50} 
                                 height={50} 

@@ -41,8 +41,8 @@ const Navbar = () => {
       };
     
       return (
-        <div className="w-full h-21 bg-[url('/header-bg-color.png')] bg-cover bg-no-repeat fixed top-0 left-0 z-50">
-          <nav className="w-full flex px-5 lg:px-8 xl:px-[8%] py-4 items-center justify-between text-lg gap-7 font-medium m-4">
+        <div className="w-full h-21 bg-[url('/header-bg-color.png')] bg-cover bg-no-repeat fixed top-0 left-0 z-50 overflow-x-hidden">
+          <nav className="w-full flex px-4 sm:px-8 lg:px-8 xl:px-[8%] py-4 items-center justify-between text-lg gap-7 font-medium m-4">
             <header className="w-32 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md">
               <a href="#top" className="bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">
                 YUNUS
@@ -70,7 +70,7 @@ const Navbar = () => {
               >
                 CONTACT
               </a>
-              <button onClick={openMenu} className='block lg:hidden mr-28'>
+              <button onClick={openMenu} className='block lg:hidden mr-4'>
                 <Image src="/menu-black.png" alt="menu" width={24} height={24} className="cursor-pointer"/>
               </button>
             </div>
