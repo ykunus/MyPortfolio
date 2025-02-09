@@ -2,7 +2,7 @@
 import React, { useState, useRef } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import Container from '../components/Container'
+import Container from '../components/container'
 
 const About = () => {
     const [currentImage, setCurrentImage] = useState(0);
