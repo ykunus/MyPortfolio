@@ -85,7 +85,7 @@ const About = () => {
                             and high school students, ensuring comprehensive support
                         </li>
                         <li>
-                            <span className="text-black font-bold">Led a group of 7 Mentors: </span>Manage and mentor a team of five, equipping them with effective strategies to
+                            <span className="text-black font-bold">Led a group of 7 Mentors: </span>Manage and mentor a team of Seven, equipping them with effective strategies to
                             support student development
                         </li>
                         <li>

@@ -15,7 +15,7 @@ const contact = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/yunus-kocaman/" className="flex flex-col md:flex-row md:space-x-4">
+                    <a href="https://www.linkedin.com/in/yunus-kocaman-b372822b5/" className="flex flex-col md:flex-row md:space-x-4">
                         <span className="hover:text-blue-500 text-gray-700 font-semibold">LinkedIn:</span> 
                         <span className="text-gray-600 font-light truncate">linkedin.com/in/yunus-kocaman</span>
                     </a>
