@@ -30,6 +30,30 @@ const projectCards = [
         tools: ['Python', 'Scikit-Learn', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'Imbalanced-learn']
     },
     {
+        url: 'https://github.com/ykunus/basic-text-editor',
+        title: 'Basic Text Editor!',
+        image: '/text-editor.png',
+        description: [
+            'A simple text editor built using a doubly linked list to manage text efficiently.',
+            'Supports insertion, deletion, and cursor movement within a text file.',
+            'Developed for a Data Structures course (COSI 21A - PA1) to understand linked lists in practice.',
+            'Handles file input and output, allowing text to be saved and loaded from files.'
+        ],
+        tools: ['Java', 'Doubly Linked List', 'File I/O', 'OOP'],
+    },
+    {
+        url: 'https://github.com/ykunus/noCoPilot-projects',
+        title: 'NoCoPilot Challenge',
+        image: '/noCoPilot.png',
+        description: [
+            'A personal challenge to complete one project per week without using AI assistance.',
+            'Projects gradually increase in difficulty to reinforce problem-solving and coding skills.',
+            'Encourages deep learning by relying on official documentation, books, and personal experience.',
+            'Each project is stored in its own folder within this repository, with documentation on the approach taken.'
+        ],
+        tools: ['Java', 'Python', 'C', 'Algorithms', 'Problem-Solving', 'Software Engineering'],
+    },
+    {
         url: 'https://github.com/ykunus/MyPortfolio',
         title: 'This Website!',
         image: '/my-portfolio.png',
