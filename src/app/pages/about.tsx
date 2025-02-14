@@ -37,8 +37,8 @@ const About = () => {
                     <Container 
                         title="Relative Coursework" 
                         content={[
-                            ["CS Courses", "Data Structures and Algorithms", "OOP", "Python", "Operating Systems", "Embedded Systems", "Fundamentals of Software Engineering"], 
-                            ["ML Courses", "Intro to Computer Security", "Intro to Machine Learning", "NLP"], 
+                            ["CS Courses", "Data Structures and Algorithms", "OOP", "Python", "Operating Systems", "Embedded Systems", "Fundamentals of Software Engineering", "Intro to Computer Security"], 
+                            ["ML Courses", "Intro to Machine Learning", "NLP"], 
                             ["Math Courses", "Intro to Probability & Statistics", "Calculus I", "Linear Algebra", "Discrete Structures"]
                         ]} 
                     />
