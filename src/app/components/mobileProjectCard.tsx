@@ -15,6 +15,7 @@ const MobileProjectCard = ({ projectCards }: { projectCards: ProjectType[] }) =>
                     className="bg-gradient-to-b from-white to-pink-100 rounded-2xl p-6 shadow-md"
                 >
                     <h2 className="text-2xl font-bold mb-4">{project.title}</h2>
+                    <p className="text-gray-600 mb-4">v Click Image v</p>
                     <Image 
                         src={project.image}
                         alt={project.title}
