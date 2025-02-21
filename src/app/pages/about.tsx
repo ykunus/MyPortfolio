@@ -51,13 +51,13 @@ const About = () => {
                 <div className="flex flex-col gap-4">
                     <Container 
                         title="Programming Languages" 
-                        content={[[null, "Java", "Python", "C", "JavaScript/TypeScript", "Swift"]]} 
+                        content={[[null, "Java", "Python", "C", "JavaScript/TypeScript", "Swift", "SQL"]]} 
                     />
                     <Container 
                         title="Full Stack Development" 
-                        content={[["Frontend", "Next.js", "React", "HTML/CSS", "Tailwind CSS"], 
+                        content={[["Frontend", "Next.js", "React", "HTML/CSS/Tailwind", "JUnit"], 
                         ["Backend", "Node.js", "Flask"], 
-                        ["Cloud Services & Databases", "CosmosDB", "Azure"]]} 
+                        ["Cloud Services & Databases", "CosmosDB","MongoDB","Firebase,","AWS", "Azure", "PostgreSQL", "SQLite"]]} 
                     />
                     <Container 
                         title="Machine Learning & Data Science" 
@@ -85,7 +85,7 @@ const About = () => {
                             and high school students, ensuring comprehensive support
                         </li>
                         <li>
-                            <span className="text-black font-bold">Led a group of 7 Mentors: </span>Manage and mentor a team of Seven, equipping them with effective strategies to
+                            <span className="text-black font-bold">Led a team of 7 Mentors: </span>Manage and mentor a team of seven, equipping them with effective strategies to
                             support student development
                         </li>
                         <li>
