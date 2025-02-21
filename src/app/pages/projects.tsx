@@ -58,7 +58,7 @@ const projectCards = [
         title: 'This Website!',
         image: '/my-portfolio.png',
         description: ['This website is a portfolio website for my projects and skills.',  'It is built with Next.js, Tailwind CSS, TypeScript, and React.', 'It is hosted on Vercel'],
-        tools: ['Next.js', 'Tailwind CSS', 'TypeScript', 'React', 'Node.js', 'Express']
+        tools: ['Next.js', 'Tailwind CSS', 'TypeScript', 'React', 'Express']
     }
 ]
 
