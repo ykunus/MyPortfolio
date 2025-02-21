@@ -20,7 +20,7 @@ const projectCards = [
         tools: ['Java', 'Multithreading', 'Concurrency', 'Thread Synchronization']
     },
     {
-        url: 'https://github.com/ykunus/MyPortfolio',
+        url: 'https://github.com/ykunus/Fraud-Detection',
         title: 'Fraud Detection!',
         image: '/fraud-detection.png',
         description: ['Explored multiple machine learning models for fraud detection, including Logistic Regression, Decision Trees, and K-Nearest Neighbors (K-NN).',
