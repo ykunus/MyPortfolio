@@ -42,17 +42,29 @@ const projectCards = [
         tools: ['Java', 'Doubly Linked List', 'File I/O', 'OOP'],
     },
     {
-        url: 'https://github.com/ykunus/noCoPilot-projects',
-        title: 'NoCoPilot Challenge',
-        image: '/noCoPilot.png',
+        url: 'https://github.com/ykunus/nlp-projects',
+        title: 'NLP Projects Repository',
+        image: '/nlp-image.jpg',
         description: [
-            'A personal challenge to complete one project per week without using AI assistance.',
-            'Projects gradually increase in difficulty to reinforce problem-solving and coding skills.',
-            'Encourages deep learning by relying on official documentation, books, and personal experience.',
-            'Each project is stored in its own folder within this repository, with documentation on the approach taken.'
+            'A collection of Natural Language Processing (NLP) projects implementing various models and techniques.',
+            'Covers topics like n-gram language modeling, part-of-speech tagging, and text classification.',
+            'Includes implementations of Naive Bayes, Hidden Markov Models (HMMs), and Perceptron classifiers.',
+            'Focuses on understanding probabilistic modeling, sequence labeling, and feature extraction in NLP.'
         ],
-        tools: ['Java', 'Python', 'C', 'Algorithms', 'Problem-Solving', 'Software Engineering'],
+        tools: ['Python', 'NLP', 'Machine Learning', 'Probability Models', 'Feature Extraction']
     },
+    // {
+    //     url: 'https://github.com/ykunus/noCoPilot-projects',
+    //     title: 'NoCoPilot Challenge',
+    //     image: '/noCoPilot.png',
+    //     description: [
+    //         'A personal challenge to complete one project per week without using AI assistance.',
+    //         'Projects gradually increase in difficulty to reinforce problem-solving and coding skills.',
+    //         'Encourages deep learning by relying on official documentation, books, and personal experience.',
+    //         'Each project is stored in its own folder within this repository, with documentation on the approach taken.'
+    //     ],
+    //     tools: ['Java', 'Python', 'C', 'Algorithms', 'Problem-Solving', 'Software Engineering'],
+    // },
     {
         url: 'https://github.com/ykunus/MyPortfolio',
         title: 'This Website!',
