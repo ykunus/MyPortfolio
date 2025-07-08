@@ -95,8 +95,8 @@ const header = () => {
                     <button className="rounded-full hover:opacity-80 transition-opacity flex items-center justify-center">
                         <a
                         className="rounded-full hover:opacity-80 transition-opacity flex items-center justify-center"
-                        href="/Yunus_Kocaman_Resume_2025_Feb_21st_PM.pdf"
-                        download="Yunus_Kocaman_Resume_2025_Feb_21st_PM.pdf"
+                        href="/Yunus_Kocaman_Resume_2025_July_8th.pdf"
+                        download="public/Yunus_Kocaman_Resume_2025_July_8th.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         >

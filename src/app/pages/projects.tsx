@@ -4,6 +4,19 @@ import MobileProjectCard from '../components/mobileProjectCard'
 
 const projectCards = [
     {
+        url: 'https://github.com/jameskong098/mfalock',
+        title: 'MFA Lock',
+        image: '/mfalock.png',
+        description: [
+          "Built a secure smart lock system with multi-factor authentication, supporting over 5 input methods.",
+          "Programmed the 3.5” HAT Mini touchscreen UI for real-time authentication selection, PIN entry, and status feedback.",
+          "Integrated camera, rotary, tap, and audio sensors using GPIO and event-driven logic on Raspberry Pi.",
+          "Enabled seamless Socket.IO communication between two Raspberry Pis to coordinate authentication flow and servo control.",
+          "Created a Flask-based web interface for user configuration and facial recognition using OpenCV."
+        ],
+        tools: ['Python', 'JavaScript', 'HTML', 'Flask', 'Socket.IO', 'OpenCV', 'Raspberry Pi', 'MicroPython']
+    },
+    {
         url: 'https://github.com/abbasi-danish/YumJunction',
         title: 'YumJunction!',
         image: '/yum-junction .png',
