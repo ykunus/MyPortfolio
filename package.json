@@ -8,7 +8,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "@next/swc-darwin-arm64": "^15.4.5",
     "@vercel/analytics": "^1.5.0",
     "framer-motion": "^12.0.6",
     "next": "^15.4.5",
