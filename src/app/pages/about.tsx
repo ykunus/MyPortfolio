@@ -24,7 +24,41 @@ const About = () => {
     const sections = [
         {
             title: "About Me",
-            content: "I'm Yunus Kocaman, a computer science student at Brandeis University with a passion for software engineering and machine learning/AI. As cliché as it sounds, I make it a goal to learn something new every day—not just in tech, but also in fields like history, theology, and philosophy. Right now, I'm diving into audio classification and speech recognition, working on training an ML model to recognize Arabic Maqamat—a project that perfectly blends my love for technology and Arabic melodies. Outside of coding, I enjoy playing basketball with friends, cooking a ribeye, and teaching others—whether it's about programming, theology or just life in general. I'm always looking for new challenges and ways to apply technology to the world around me. Feel free to reach out—I'd love to connect!"
+            content: "I'm Yunus Kocaman, a computer science student at Brandeis University with a passion for software engineering and machine learning/AI. As cliche as it sounds, I make it a goal to learn something new every day, not just in tech, but also in fields like history, theology, and philosophy. Right now, I'm diving into audio classification and speech recognition, working on training an ML model to recognize Arabic Maqamat, a project that perfectly blends my love for technology and Arabic melodies. Outside of coding, I enjoy playing basketball with friends, cooking a ribeye, and teaching others, whether it's about programming, theology or just life in general. I'm always looking for new challenges and ways to apply technology to the world around me. Feel free to reach out! I'd love to connect!"
+        },
+        {
+            title: "Experience",
+            content: (
+                <div className="flex flex-col gap-4">
+                    <Container
+                        title="Data Engineering Intern, Pioneer Charter School of Science, July. 2025 – Present"
+                        content={[
+                            ["Site-to-site VPN", "StrongSwan on EC2", "Automated daily PowerSchool → S3 transfers"],
+                            ["AWS Glue ETL", "Configured ETL jobs", "Eliminated manual exports"],
+                            ["Pipeline Monitoring", "CloudWatch & S3 metrics", "Ensured high availability"],
+                            ["SQL Queries", "Developed & optimized", "Extracted & transformed datasets"],
+                            ["QuickSight Dashboards", "Populated visualizations", "Cut report time from ~30 min to < 1 min"]
+                        ]}
+                    />
+                    <Container
+                        title= "Boston Education & Counseling / Youth Mentor, Sep. 2022 – Present"
+                        content={[
+                            [
+                            "Mentored and Supervised 30+ Students",
+                            "Provided weekly academic, social, and spiritual guidance to middle and high school students"
+                            ],
+                            [
+                            "Led a Team of 7 Mentors",
+                            "Managed and mentored a team of seven to support student development"
+                            ],
+                            [
+                            "Facilitated 15+ Youth Retreats",
+                            "Organized and led 7–10 day retreats focused on personal growth, leadership, and mentorship"
+                            ]
+                        ]}
+                    />
+                </div>
+            )
         },
         {
             title: "Education",
@@ -72,29 +106,6 @@ const About = () => {
                 </div>
             )
         },
-        {
-            title: "Experience",
-            content: (
-                <>
-                    <ul className="">
-                        <li>
-                            <h3 className="text-xl font-semibold mb-2">Boston Education and Counseling/Youth Mentor</h3>
-                        </li>
-                        <li>
-                            <span className="text-black font-bold">Mentored and Supervised 30+ Students: </span>Provide weekly academic, social, and spiritual guidance to middle
-                            and high school students, ensuring comprehensive support
-                        </li>
-                        <li>
-                            <span className="text-black font-bold">Led a team of 7 Mentors: </span>Manage and mentor a team of seven, equipping them with effective strategies to
-                            support student development
-                        </li>
-                        <li>
-                            <span className="text-black font-bold">Facilitated 15+ Youth Retreats: </span>Organized and led 7 to 10 day retreats focused on personal growth, leadership,
-                        </li>
-                    </ul>
-                </>
-            )
-        }
     ];
 
     return (
